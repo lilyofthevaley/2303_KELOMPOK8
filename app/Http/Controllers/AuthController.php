@@ -34,6 +34,7 @@ class AuthController extends Controller
                 return redirect()->route('guru.dashboard');
             } else if ($user->isSiswa()) {
                 return redirect()->route('siswa.dashboard');
+                // test
             }
         }
 
