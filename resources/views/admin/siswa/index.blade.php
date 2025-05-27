@@ -48,7 +48,7 @@
                         <td>{{ $s->jurusan }}</td>
                         <td>{{ $s->no_telp }}</td>
                         <td>
-                            <a href="{{ route('admin.siswa.show', $s) }}" class="btn btn-info btn-sm">
+                            <a href="{{ url('admin/siswa/show', $s) }}" class="btn btn-info btn-sm">
                                 <i class="fas fa-eye"></i>
                             </a>
                             <a href="{{ route('admin.siswa.edit', $s) }}" class="btn btn-warning btn-sm">

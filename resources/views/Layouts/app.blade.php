@@ -188,7 +188,7 @@
                     </a>
                 </li>
                 <li class="{{ request()->routeIs('admin.guru.*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.guru.index') }}">
+                    <a href="{{ url('admin/guru') }}">
                         <i class="fas fa-chalkboard-teacher"></i> Data Guru
                     </a>
                 </li>

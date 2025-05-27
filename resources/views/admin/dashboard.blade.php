@@ -94,7 +94,7 @@
             </div>
             <div class="card-body">
                 <p>Kelola data siswa termasuk NIS, nama, kelas, jurusan, dan informasi lainnya.</p>
-                <a href="{{ route('admin.siswa.index') }}" class="btn btn-primary">
+                <a href="{{ url('admin/siswa') }}" class="btn btn-primary">
                     <i class="fas fa-arrow-right"></i> Lihat Data Siswa
                 </a>
             </div>
@@ -110,7 +110,7 @@
             </div>
             <div class="card-body">
                 <p>Kelola data guru termasuk NIP, nama, mata pelajaran, dan informasi lainnya.</p>
-                <a href="{{ route('admin.guru.index') }}" class="btn btn-primary">
+                <a href="{{ url('admin/guru') }}" class="btn btn-primary">
                     <i class="fas fa-arrow-right"></i> Lihat Data Guru
                 </a>
             </div>

@@ -9,7 +9,7 @@
         <a href="{{ route('admin.guru.edit', $guru) }}" class="btn btn-warning">
             <i class="fas fa-edit"></i> Edit
         </a>
-        <a href="{{ route('admin.guru.index') }}" class="btn btn-secondary">
+        <a href="{{ route('admin.guru') }}" class="btn btn-secondary">
             <i class="fas fa-arrow-left"></i> Kembali
         </a>
     </div>

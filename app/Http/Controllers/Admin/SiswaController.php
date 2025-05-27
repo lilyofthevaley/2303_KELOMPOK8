@@ -25,7 +25,7 @@ class SiswaController extends Controller
         }
         
         $siswa = $query->paginate(10);
-        return view('admin.siswa.index', compact('siswa'));
+        return view('admin.siswa', compact('siswa'));
     }
 
     public function create()
@@ -70,7 +70,7 @@ class SiswaController extends Controller
             ]);
         });
 
-        return redirect()->route('admin.siswa.index')->with('success', 'Data siswa berhasil ditambahkan');
+        return redirect()->route('admin.siswa.create')->with('success', 'Data siswa berhasil ditambahkan');
     }
 
     public function show(Siswa $siswa)
@@ -114,7 +114,7 @@ class SiswaController extends Controller
             ]);
         });
 
-        return redirect()->route('admin.siswa.index')->with('success', 'Data siswa berhasil diperbarui');
+        return redirect()->route('admin.siswa')->with('success', 'Data siswa berhasil diperbarui');
     }
 
     public function destroy(Siswa $siswa)
@@ -125,6 +125,6 @@ class SiswaController extends Controller
             // Data siswa akan otomatis terhapus karena constraint onDelete cascade
         });
 
-        return redirect()->route('admin.siswa.index')->with('success', 'Data siswa berhasil dihapus');
+        return redirect()->route('admin.siswa')->with('success', 'Data siswa berhasil dihapus');
     }
 }

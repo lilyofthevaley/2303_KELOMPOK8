@@ -68,7 +68,7 @@ class GuruController extends Controller
             ]);
         });
 
-        return redirect()->route('admin.guru.index')->with('success', 'Data guru berhasil ditambahkan');
+        return redirect()->route('admin.guru.create')->with('success', 'Data guru berhasil ditambahkan');
     }
 
     public function show(Guru $guru)

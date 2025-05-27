@@ -6,10 +6,10 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Detail Siswa</h1>
     <div>
-        <a href="{{ route('admin.siswa.edit', $siswa) }}" class="btn btn-warning">
+        <a href="{{ url('admin/siswa/edit', $siswa) }}" class="btn btn-warning">
             <i class="fas fa-edit"></i> Edit
         </a>
-        <a href="{{ route('admin.siswa.index') }}" class="btn btn-secondary">
+        <a href="{{ url('admin/siswa') }}" class="btn btn-secondary">
             <i class="fas fa-arrow-left"></i> Kembali
         </a>
     </div>

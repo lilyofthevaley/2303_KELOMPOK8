@@ -5,7 +5,7 @@
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Edit Guru</h1>
-    <a href="{{ route('admin.guru.index') }}" class="btn btn-secondary">
+    <a href="{{ route('admin.guru') }}" class="btn btn-secondary">
         <i class="fas fa-arrow-left"></i> Kembali
     </a>
 </div>
@@ -95,7 +95,7 @@
                 <button type="submit" class="btn btn-primary">
                     <i class="fas fa-save"></i> Simpan Perubahan
                 </button>
-                <a href="{{ route('admin.guru.index') }}" class="btn btn-secondary">
+                <a href="{{ route('admin.guru') }}" class="btn btn-secondary">
                     <i class="fas fa-times"></i> Batal
                 </a>
             </div>
